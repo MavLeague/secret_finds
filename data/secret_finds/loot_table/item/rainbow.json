@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"rAinbow\"}",
+                "minecraft:custom_name": "[{\"color\":\"aqua\",\"italic\":false,\"text\":\"r\"},{\"bold\":true,\"color\":\"light_purple\",\"text\":\"A\"},{\"color\":\"aqua\",\"text\":\"inbow\"}]",
+                "minecraft:rarity": "rare",
+                "minecraft:custom_model_data": 1,
+                "minecraft:lore": [
+                  "{\"italic\":false,\"text\":\"But what does it do?\"}"
+                ],
+                "minecraft:custom_data": {
+                  "rainbow_drug":1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

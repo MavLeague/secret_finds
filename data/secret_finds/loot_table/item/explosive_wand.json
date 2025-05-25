@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"Explosive Wand\"}",
+                "minecraft:rarity": "rare",
+                "minecraft:custom_model_data": 5,
+                "minecraft:lore": [
+                  "{\"italic\":false,\"text\":\"a weapon of old times,\"}",
+                  "{\"italic\":false,\"text\":\"enhanced with modern technology\"}"
+                ],
+                "minecraft:custom_data": {
+                  "explosive_wand":1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
