@@ -4,7 +4,7 @@ Waiting for Modrinth release...
 # Item ToDo
 
 - item magnet ✔️
-- dash feather 
+- dash feather ✔️
 - explosion wand
 - flying ring
 - grid placer

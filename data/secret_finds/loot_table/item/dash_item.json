@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warped_fungus_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"text":"Sonic Boom"},
+                "minecraft:rarity": "epic",
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "dash_item"
+                  ]
+                },
+                "max_damage":100,
+                "minecraft:lore": [
+                  {"color":"white","italic":false,"text":"Bada Boom Bada Bang!"},
+                  {"text":""},
+                  {"color":"gray","italic":false,"text":"When used:"},
+                  [{"color":"blue","italic":false,"text":"-10 Durability"}]
+                ],
+                "minecraft:custom_data": {
+                  "dash":1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
