@@ -5,11 +5,11 @@ Waiting for Modrinth release...
 
 - item magnet ✔️
 - dash feather ✔️
+- surface leveler ✔️
 - explosion wand
 - flying ring
 - grid placer
 - player switch
-- surface leveler
 - torch wand
 - _pocket dimention_
 - _rainbow drug_
