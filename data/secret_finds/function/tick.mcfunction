@@ -16,7 +16,7 @@ execute as @a at @s if score @s secret_finds.warped_fungus_on_a_stick matches 1.
 execute as @a[tag=!timeout] if score @s secret_finds.timeout matches 1.. run tag @s add timeout
 execute as @a[tag=timeout] if score @s secret_finds.timeout matches ..0 run tag @s remove timeout
 execute as @a if score @s secret_finds.timeout matches 1.. run scoreboard players remove @s secret_finds.timeout 1
-execute as @a[tag=timeout] run title @s actionbar ["",{"text":"Cooldown: ","color":"yellow"},{"score":{"name":"@s","objective":"secret_finds.timeout"},"bold":true,"color":"gold"}]
+execute as @a[tag=timeout] run function secret_finds:timeout_display
 
 
 ## Item effects
