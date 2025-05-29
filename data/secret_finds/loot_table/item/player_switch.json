@@ -10,15 +10,18 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"text\":\"Player Switch\"}",
+                "minecraft:item_name": {"text":"Player Switch"},
                 "minecraft:rarity": "rare",
-                "minecraft:custom_model_data": 4,
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "player_switch"
+                  ]
+                },
                 "minecraft:lore": [
-                  "{\"color\":\"gray\",\"italic\":false,\"text\":\"Hold it with you Friend and switch places!\"}"
+                  {"color":"gray","italic":false,"text":"Hold it with you Friend and switch places!"}
                 ],
                 "minecraft:custom_data": {
-                  "player_switch":1,
-                  "bounded_to":[]
+                  "player_switch":1
                 }
               }
             }

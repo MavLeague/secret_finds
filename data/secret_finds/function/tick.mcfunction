@@ -27,3 +27,8 @@ execute as @a at @s if items entity @s weapon.* *[minecraft:custom_data~{item_ma
 execute as @a[tag=secret_finds.nofalldamage] at @s unless data entity @s attributes[{id:"minecraft:fall_damage_multiplier",base:0.0d}] at @s run attribute @s fall_damage_multiplier base set 0
 execute as @a[tag=secret_finds.nofalldamage,scores={secret_finds.timeout=..1}] at @s if data entity @s attributes[{id:"minecraft:fall_damage_multiplier",base:0.0d}] run attribute @s fall_damage_multiplier base set 1.0
 execute as @a[tag=secret_finds.nofalldamage,scores={secret_finds.timeout=..1}] if data entity @s attributes[{id:"minecraft:fall_damage_multiplier",base:1.0d}] at @s run tag @s remove secret_finds.nofalldamage
+
+# player switch
+execute as @a[tag=secret_finds.player_switch.player_ready,tag=!secret_finds.player_switch.teleported] at @s run function secret_finds:player_switch/idle
+execute as @a[tag=secret_finds.player_switch.player_ready,tag=secret_finds.player_switch.teleported] at @s run tag @s remove secret_finds.player_switch.player_ready
+execute as @a[tag=!secret_finds.player_switch.player_ready,tag=secret_finds.player_switch.teleported] at @s run tag @s remove secret_finds.player_switch.teleported
