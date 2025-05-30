@@ -6,7 +6,7 @@ Waiting for Modrinth release...
 - item magnet ✔️
 - dash feather ✔️
 - surface leveler ✔️
-- player switch (✔️) _deactivation conditions are missing rn_
+- player switch ✔️
 - explosion wand
 - flying ring
 - grid placer

@@ -15,10 +15,17 @@
                 "minecraft:custom_model_data": {
                   "strings": [
                     "player_switch"
+                  ],
+                  "floats": [
+                    0
                   ]
                 },
+                "max_damage":100,
                 "minecraft:lore": [
-                  {"color":"gray","italic":false,"text":"Hold it with you Friend and switch places!"}
+                  {"color":"gray","italic":false,"text":"Switch places with your Friends!"},
+                  {"text":""},
+                  {"color":"gray","italic":false,"text":"When used:"},
+                  [{"color":"blue","italic":false,"text":"-5 Durability"}]
                 ],
                 "minecraft:custom_data": {
                   "player_switch":1

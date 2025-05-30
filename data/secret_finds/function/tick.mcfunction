@@ -32,3 +32,5 @@ execute as @a[tag=secret_finds.nofalldamage,scores={secret_finds.timeout=..1}] i
 execute as @a[tag=secret_finds.player_switch.player_ready,tag=!secret_finds.player_switch.teleported] at @s run function secret_finds:player_switch/idle
 execute as @a[tag=secret_finds.player_switch.player_ready,tag=secret_finds.player_switch.teleported] at @s run tag @s remove secret_finds.player_switch.player_ready
 execute as @a[tag=!secret_finds.player_switch.player_ready,tag=secret_finds.player_switch.teleported] at @s run tag @s remove secret_finds.player_switch.teleported
+
+execute as @a[tag=!secret_finds.player_switch.player_ready] at @s if items entity @s weapon *[custom_data~{player_switch:1b}] if data entity @s {SelectedItem:{components:{"minecraft:custom_model_data":{floats:[1f]}}}} run function secret_finds:toggle_custom_model_data

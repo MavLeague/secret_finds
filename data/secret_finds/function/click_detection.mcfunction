@@ -8,4 +8,4 @@ execute if data entity @s SelectedItem.components.minecraft:enchantment_glint_ov
 execute unless entity @s[tag=timeout] if items entity @s weapon *[!minecraft:damage=100,minecraft:custom_data~{dash:1b}] run function secret_finds:dash/main
 
 # player_switch
-execute if items entity @s weapon *[custom_data~{player_switch:1b}] run function secret_finds:player_switch/main
+execute if items entity @s weapon *[custom_data~{player_switch:1b},!damage=100] run function secret_finds:player_switch/main

@@ -9,3 +9,7 @@ execute unless entity @s[tag=secret_finds.player_switch.player_ready] at @s unle
 execute if entity @s[tag=secret_finds.player_switch.player_ready.old] at @s run tag @s remove secret_finds.player_switch.player_ready
 
 tag @s remove secret_finds.player_switch.player_ready.old
+
+execute if entity @s[tag=secret_finds.player_switch.player_ready] at @s run summon area_effect_cloud ~ ~ ~ {Tags:["secret_finds","secret_finds.player_switch","secret_finds.player_switch.position_marker"],Radius:0f,Duration:0,Particle:{type:"reverse_portal"}}
+
+function secret_finds:toggle_custom_model_data
