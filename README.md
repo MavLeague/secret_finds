@@ -7,9 +7,9 @@ Waiting for Modrinth release...
 - dash feather ✔️
 - surface leveler ✔️
 - player switch ✔️
+- grid placer ✔️
 - explosion wand
 - flying ring
-- grid placer
 - torch wand
 - _pocket dimention_
 - _rainbow drug_

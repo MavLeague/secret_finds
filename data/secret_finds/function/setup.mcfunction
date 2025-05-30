@@ -5,6 +5,8 @@ scoreboard objectives add secret_finds.warped_fungus_on_a_stick minecraft.used:m
 scoreboard objectives add secret_finds.timeout dummy
 scoreboard objectives add secret_finds.sneak minecraft.custom:sneak_time
 scoreboard objectives add secret_finds.elytra minecraft.custom:aviate_one_cm
+scoreboard objectives add secret_finds.raycast.steps dummy
+scoreboard objectives add secret_finds.raycast.success dummy
 
 
 # set variables

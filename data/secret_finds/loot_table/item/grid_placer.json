@@ -10,20 +10,20 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"text\":\"Grid Placer 3x3\"}",
+                "minecraft:item_name": {"text":"Grid Placer"},
                 "minecraft:rarity": "rare",
-                "minecraft:custom_model_data": 3,
-                "minecraft:enchantment_glint_override": false,
-                "minecraft:unbreakable": {
-                  "show_in_tooltip": false
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "grid_placer"
+                  ]
                 },
                 "minecraft:lore": [
-                  "{\"color\":\"gray\",\"italic\":false,\"text\":\"Put the Block, you want to place, \"}",
-                  "{\"color\":\"gray\",\"italic\":false,\"text\":\"in your Offhand and see the magic happent!\"}"
+                  {"color":"gray","italic":false,"text":"Put the Block you want to"},
+                  {"color":"gray","italic":false,"text":"place in your Offhand and"},
+                  {"color":"gray","italic":false,"text":"see the magic happent!"}
                 ],
                 "minecraft:custom_data": {
-                  "grid_placer":1,
-                  "grid":[3,3]
+                  "grid_placer":1
                 }
               }
             }
