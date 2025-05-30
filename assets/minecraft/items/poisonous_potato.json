@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/poisonous_potato"
+    },
+    "cases": [
+      {
+        "when": "surface_leveler",
+        "model": {
+          "type": "model",
+          "model": "item/surface_leveler"
+        }
+      }
+    ]
+  }
+}

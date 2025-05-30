@@ -15,4 +15,4 @@ tag @s add secret_finds.nofalldamage
 scoreboard players set @s secret_finds.item_modifier -10
 item modify entity @s weapon secret_finds:add_damage
 
-#say booooost
+say booooost

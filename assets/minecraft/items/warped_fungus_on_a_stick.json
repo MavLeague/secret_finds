@@ -1,0 +1,56 @@
+{
+  "model": {
+    "type": "select",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "minecraft:item/warped_fungus_on_a_stick"
+    },
+    "cases": [
+      {
+        "when": "dash_item",
+        "model": {
+          "type": "model",
+          "model": "item/dash_item"
+        }
+      },
+      {
+        "when": "grid_placer",
+        "model": {
+          "type": "model",
+          "model": "item/grid_placer"
+        }
+      },
+      {
+        "when": "item_magnet",
+        "model": {
+          "type": "model",
+          "model": "item/item_magnet"
+        }
+      },
+      {
+        "when": "player_switch",
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "minecraft:custom_model_data",
+          "entries": [
+            {
+              "threshold": 0,
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/player_switch"
+              }
+            },
+            {
+              "threshold": 1,
+              "model": {
+                "type": "minecraft:model",
+                "model": "item/player_switch_on"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
