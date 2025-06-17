@@ -1,3 +1,3 @@
-scoreboard players operation @s sword_control.tag = #count sword_control.tag
+scoreboard players operation @s secret_finds.sword_control.id = #count secret_finds.sword_control.id
 
-scoreboard players add #count sword_control.tag 1
+scoreboard players add #count secret_finds.sword_control.id 1

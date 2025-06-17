@@ -7,6 +7,7 @@ scoreboard objectives add secret_finds.sneak minecraft.custom:sneak_time
 scoreboard objectives add secret_finds.elytra minecraft.custom:aviate_one_cm
 scoreboard objectives add secret_finds.raycast.steps dummy
 scoreboard objectives add secret_finds.raycast.success dummy
+scoreboard objectives add secret_finds.sword_control.id dummy
 
 
 # set variables

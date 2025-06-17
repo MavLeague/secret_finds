@@ -1,6 +1,6 @@
 # hinterausrichtung
 
-execute unless score @s sword_control.tag matches 0.. run function darkness:sword_control/sword_score
+execute unless score @s secret_finds.sword_control.id matches 0.. run function secret_finds:sword_control/sword_score
 
 # 0 Base
 summon area_effect_cloud ^ ^ ^ {Tags:["sword_control.base","sword_control"],Duration:1}
@@ -23,9 +23,9 @@ execute at @e[tag=sword_control.base2] run summon area_effect_cloud ^2 ^2 ^1 {Du
 
 #Tag cyrcle
 
-scoreboard players operation #curent sword_control.tag = @s sword_control.tag
+scoreboard players operation #curent secret_finds.sword_control.id = @s secret_finds.sword_control.id
 
-execute as @e[type=area_effect_cloud,tag=sword_control.summon,tag=sword_control,distance=..8] unless score @s sword_control.tag matches 0.. run scoreboard players operation @s sword_control.tag = #curent sword_control.tag
+execute as @e[type=area_effect_cloud,tag=sword_control.summon,tag=sword_control,distance=..8] unless score @s secret_finds.sword_control.id matches 0.. run scoreboard players operation @s secret_finds.sword_control.id = #curent secret_finds.sword_control.id
 
 # orientation cyrcle
 
@@ -37,7 +37,7 @@ execute at @s as @e[type=area_effect_cloud,tag=sword_control.summon,tag=sword_co
 
 # tag sword
 
-execute as @e[tag=sword_control.sword,distance=..8] unless score @s sword_control.tag matches 0.. run scoreboard players operation @s sword_control.tag = #curent sword_control.tag
+execute as @e[tag=sword_control.sword,distance=..8] unless score @s secret_finds.sword_control.id matches 0.. run scoreboard players operation @s secret_finds.sword_control.id = #curent secret_finds.sword_control.id
 
 # sword orientation
 
