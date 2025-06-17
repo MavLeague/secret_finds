@@ -13,6 +13,6 @@ tag @s add secret_finds.nofalldamage
 
 # add damage
 scoreboard players set @s secret_finds.item_modifier -10
-item modify entity @s weapon secret_finds:add_damage
+execute unless entity @s[gamemode=creative] run item modify entity @s weapon secret_finds:add_damage
 
 say booooost
