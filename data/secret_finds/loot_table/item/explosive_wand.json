@@ -10,12 +10,16 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "{\"text\":\"Explosive Wand\"}",
+                "minecraft:item_name": {"text":"Explosive Wand"},
                 "minecraft:rarity": "rare",
-                "minecraft:custom_model_data": 5,
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "explosive_wand"
+                  ]
+                },
                 "minecraft:lore": [
-                  "{\"italic\":false,\"text\":\"a weapon of old times,\"}",
-                  "{\"italic\":false,\"text\":\"enhanced with modern technology\"}"
+                  {"italic":false,"text":"a weapon of old times,"},
+                  {"italic":false,"text":"enhanced with modern technology"}
                 ],
                 "minecraft:custom_data": {
                   "explosive_wand":1
