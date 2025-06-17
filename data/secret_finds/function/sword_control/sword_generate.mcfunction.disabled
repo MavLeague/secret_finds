@@ -1,0 +1,45 @@
+## Hinterausrichtung
+# 1. Stütze
+execute at @s run summon area_effect_cloud ^ ^ ^ {Tags:["sword_control.base","sword_control"]}
+
+execute as @s run teleport @e[tag=sword_control.base,limit=1,sort=nearest] ^-0.001 ^ ^ facing entity @s
+
+# 2. stütze
+execute as @s at @e[tag=sword_control.base] run summon area_effect_cloud ^ ^ ^ {Tags:["sword_control.base1","sword_control"]}
+
+execute as @e[tag=sword_control.base,limit=1] at @s run teleport @e[tag=sword_control.base1,limit=1,sort=nearest] ^0.01 ^ ^ facing entity @e[tag=sword_control.base,limit=1]
+
+# 3. Stütze
+execute as @s at @e[tag=sword_control.base1] run summon area_effect_cloud ^ ^ ^ {Tags:["sword_control.base2","sword_control"]}
+
+execute at @e[tag=sword_control.base1,limit=1] as @e[tag=sword_control.base1,limit=1] run teleport @e[tag=sword_control.base2,limit=1,sort=nearest] ^ ^ ^0.001 facing entity @e[tag=sword_control.base1,limit=1]
+
+# summon cyrcle
+execute at @e[tag=sword_control.base2] run summon area_effect_cloud ^2 ^2 ^1 {Duration:40,Tags:["sword_control.summon1","sword_control.summon","sword_control"]}
+
+execute at @e[tag=sword_control.base2] run summon area_effect_cloud ^-2 ^2 ^1 {Duration:40,Tags:["sword_control.summon2","sword_control.summon","sword_control"]}
+
+execute at @e[tag=sword_control.base2] run summon area_effect_cloud ^1 ^4 ^1 {Duration:40,Tags:["sword_control.summon3","sword_control.summon","sword_control"]}
+
+execute at @e[tag=sword_control.base2] run summon area_effect_cloud ^-1 ^4 ^1 {Duration:40,Tags:["sword_control.summon4","sword_control.summon","sword_control"]}
+
+# orientation
+data modify entity @e[tag=sword_control.summon1,limit=1,sort=nearest] Rotation set from entity @s Rotation
+data modify entity @e[tag=sword_control.summon2,limit=1,sort=nearest] Rotation set from entity @s Rotation
+data modify entity @e[tag=sword_control.summon3,limit=1,sort=nearest] Rotation set from entity @s Rotation
+data modify entity @e[tag=sword_control.summon4,limit=1,sort=nearest] Rotation set from entity @s Rotation
+
+# summon sword
+execute at @s as @e[type=area_effect_cloud,tag=sword_control.summon,tag=sword_control,distance=..8] at @s run summon item_display ~ ~ ~ {glow_color_override:0b,teleport_duration:2,NoGravity:1b,interpolation_duration:10,Tags:["sword_control","sword_control.sword"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0.6532815f,0.2705981f,-0.2705981f,0.6532815f],translation:[0f,0f,0f],scale:[0f,0f,0f]},item:{id:"minecraft:iron_sword",count:1}}
+
+# sword orientation
+execute as @s at @e[type=area_effect_cloud,tag=sword_control.summon1,distance=..8] run data modify entity @e[tag=sword_control.sword,limit=1,sort=nearest] Rotation set from entity @s Rotation
+execute as @s at @e[type=area_effect_cloud,tag=sword_control.summon2,distance=..8] run data modify entity @e[tag=sword_control.sword,limit=1,sort=nearest] Rotation set from entity @s Rotation
+execute as @s at @e[type=area_effect_cloud,tag=sword_control.summon3,distance=..8] run data modify entity @e[tag=sword_control.sword,limit=1,sort=nearest] Rotation set from entity @s Rotation
+execute as @s at @e[type=area_effect_cloud,tag=sword_control.summon4,distance=..8] run data modify entity @e[tag=sword_control.sword,limit=1,sort=nearest] Rotation set from entity @s Rotation
+
+# sword animation
+execute as @e[tag=sword_control.sword,distance=..8] run data modify entity @s transformation.scale set value [1f,1f,1f]
+execute as @e[tag=sword_control.sword,distance=..8] run data modify entity @s start_interpolation set value -1
+
+
