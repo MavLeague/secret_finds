@@ -34,3 +34,9 @@ execute as @a[tag=secret_finds.player_switch.player_ready,tag=secret_finds.playe
 execute as @a[tag=!secret_finds.player_switch.player_ready,tag=secret_finds.player_switch.teleported] at @s run tag @s remove secret_finds.player_switch.teleported
 
 execute as @a[tag=!secret_finds.player_switch.player_ready] at @s if items entity @s weapon *[custom_data~{player_switch:1b}] if data entity @s {SelectedItem:{components:{"minecraft:custom_model_data":{floats:[1f]}}}} run function secret_finds:toggle_custom_model_data
+
+execute as @e[type=armor_stand,tag=!secret_finds.player_switch.player_ready] at @s if items entity @s weapon *[custom_data~{player_switch:1b},!damage=100] run tag @s add secret_finds.player_switch.player_ready
+execute as @e[type=armor_stand,tag=secret_finds.player_switch.player_ready] at @s unless items entity @s weapon *[custom_data~{player_switch:1b},!damage=100] run tag @s remove secret_finds.player_switch.player_ready
+
+execute as @e[type=armor_stand] at @s if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:40}} if entity @n[type=item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{player_switch:1b}}}}] run item replace entity @s weapon.mainhand from entity @n[type=item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{player_switch:1b}}}}] container.0
+execute as @e[type=armor_stand] at @s if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:40}} if entity @n[type=item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{player_switch:1b}}}}] run kill @n[type=item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{player_switch:1b}}}}]
