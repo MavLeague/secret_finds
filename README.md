@@ -6,9 +6,9 @@ Waiting for Modrinth release...
 - item magnet ✔️✔️
 - dash feather ✔️✔️
 - surface leveler ✔️✔️
-- player switch ✔️
+- player switch ✔️✔️
     - player switch arrow
-- grid placer ✔️
+- grid placer ✔️✔️
 - explosion wand
 - flying ring ❌
 - torch wand ❌

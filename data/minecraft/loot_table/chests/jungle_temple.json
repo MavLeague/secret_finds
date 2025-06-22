@@ -6,18 +6,8 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "secret_finds:item/item_magnet",
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": 1
-            }
-          ],
-          "conditions": []
-        },
-        {
-          "type": "minecraft:loot_table",
-          "value": "secret_finds:item/grid_placer",
+          "value": "secret_finds:item/player_switch",
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:limit_count",
@@ -39,7 +29,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:diamond"
+          "name": "minecraft:diamond",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -55,7 +46,7 @@
             }
           ],
           "name": "minecraft:iron_ingot",
-          "weight": 5
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -64,34 +55,30 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
+                "max": 7,
+                "min": 2
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:gold_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:bread",
+          "name": "minecraft:gold_ingot",
           "weight": 15
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_pickaxe",
-          "weight": 5
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:bamboo",
+          "weight": 15
         },
         {
           "type": "minecraft:item",
@@ -106,7 +93,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:coal"
+          "name": "minecraft:emerald",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -115,27 +103,87 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
+                "max": 6,
+                "min": 4
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:stick",
+          "name": "minecraft:bone",
           "weight": 20
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_shovel",
-          "weight": 5
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 7,
+                "min": 3
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:rotten_flesh",
+          "weight": 16
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "name": "minecraft:book"
         }
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 8,
-        "min": 3
+        "max": 6,
+        "min": 2
       }
+    },
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 2,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:wild_armor_trim_smithing_template"
+        }
+      ],
+      "rolls": 1
     }
   ],
-  "random_sequence": "minecraft:chests/village/village_toolsmith"
+  "random_sequence": "minecraft:chests/jungle_temple"
 }
