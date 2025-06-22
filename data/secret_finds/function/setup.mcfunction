@@ -1,3 +1,5 @@
+tellraw @a ["\n",{text:"Secret Finds",bold:false,color:"white"},{text:" is loaded!",bold:false,color:"white"},"\n",{text:"Version: ",color:"yellow"},{text:"1.21.5",color:"green"},{text:".1.0",color:"gray"}]
+
 # add scoreboards
 scoreboard objectives add secret_finds.data dummy
 scoreboard objectives add secret_finds.item_modifier dummy
