@@ -50,6 +50,13 @@
             }
           ]
         }
+      },
+      {
+        "when": "summon_sword",
+        "model": {
+          "type": "model",
+          "model": "item/summon_sword"
+        }
       }
     ]
   }
