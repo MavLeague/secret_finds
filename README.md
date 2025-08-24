@@ -1,5 +1,10 @@
-# Secret Finds
+# <img src="https://cdn.modrinth.com/data/cached_images/828be4b8a08b44844cd733d7bc4afb56e5741782.png" alt="Logo" width="50"/> Secret Finds
 This datapack/ mod adds new unique items that can be found around the world. They're all compatible with single- and multiplayer and some even have unique multiplayer features!
+
+<p align="center">
+  <img src="https://github.com/MavLeague/secret_finds/blob/main/media_ressources/item-animations-secret-finds_24fps_16-9.gif?raw=true" alt="Animation" width="80%"/>
+</p>
+
 
 ## Items
 ### Item magnet
@@ -12,6 +17,10 @@ Toolsmith's chests in Villages
 
 </details>
 
+<p align="center">
+  <img src="https://github.com/MavLeague/secret_finds/blob/main/media_ressources/item_magnet.gif?raw=true" alt="Animation" width="20%"/>
+</p>
+
 ### Dash Feather
 This Item is a must-have for travelers! When using this item, it gives you an insane Boost in the viewing direction. You also get no fall damage as long as the cooldown lasts.
 
@@ -21,6 +30,10 @@ This Item is a must-have for travelers! When using this item, it gives you an in
 End Cities
 
 </details>
+
+<p align="center">
+  <img src="https://github.com/MavLeague/secret_finds/blob/main/media_ressources/dash_item.gif?raw=true" alt="Animation" width="20%"/>
+</p>
 
 ### Surface Leveler
 This fruit can help you when you're stuck in a mineshaft. When eaten, it teleports you back to the world surface.
@@ -32,6 +45,10 @@ Mineshafts
 
 </details>
 
+<p align="center">
+  <img src="https://github.com/MavLeague/secret_finds/blob/main/media_ressources/surface_leveler.gif?raw=true" alt="Animation" width="20%"/>
+</p>
+
 ### Player Switch
 This item allows you to switch places with another Player in a 10-block radius. You can also give this item to an armor stand, and it will wait for somebody to switch once.
 
@@ -41,6 +58,10 @@ This item allows you to switch places with another Player in a 10-block radius. 
 Jungle Temples
 
 </details>
+
+<p align="center">
+  <img src="https://github.com/MavLeague/secret_finds/blob/main/media_ressources/player_switch.gif?raw=true" alt="Animation" width="20%"/>
+</p>
 
 ### Grid Placer
 When you put this item into your offhand, you're able to place 9 Blocks at once. (3x3)
@@ -52,6 +73,11 @@ Toolsmith's chests in Villages
 
 </details>
 
+<p align="center">
+  <img src="https://github.com/MavLeague/secret_finds/blob/main/media_ressources/grid_placer.gif?raw=true" alt="Animation" width="20%"/>
+</p>
+
+
 
 #
 I'll add more items in the future, so stay tuned!
@@ -59,5 +85,4 @@ I'll add more items in the future, so stay tuned!
 
 If you wanna give **Feedback**, have **Feature requests** or if you've found some **Bugs**, don't bother but reach out to me [here!][Issue Tracker]
 
-[Issue Tracker]: https://github.com/MavLeague/tils_graves/issues
-
+[Issue Tracker]: https://github.com/MavLeague/secret_finds/issues
