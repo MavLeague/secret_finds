@@ -85,4 +85,6 @@ I'll add more items in the future, so stay tuned!
 
 If you wanna give **Feedback**, have **Feature requests** or if you've found some **Bugs**, don't bother but reach out to me [here!][Issue Tracker]
 
+[![License: LICENSE-CC-BY-NC-4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue)](https://github.com/MavLeague/secret_finds/blob/main/LICENSE-CC-BY-NC-4.0.md)
+
 [Issue Tracker]: https://github.com/MavLeague/secret_finds/issues
